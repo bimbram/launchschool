@@ -1,0 +1,105 @@
+00. Introduction
+================
+
+A Brief History of Ruby
+------------------------
+-Ruby emphasize that software should concerns human first and computers second
+
+Computers Science and Layers of Abstraction
+-------------------------------------------
+-Abstraction is a technique for arranging complexity in the computer system.
+
+-There can be levels to abstraction, each level has different degree of complexity
+
+-The higher we're on the abstraction chain, the simpler/easier it is for us to
+understand its complexity
+
+-Every programming language is based on other lower level layers of code
+
+-Domain Specific Language example: rails, Rspec
+
+
+Who This Book is For
+--------------------
+-Programming requires us to be patience.
+
+-A task difficulty will decrease the more time we invest into investigate that
+task
+
+How to Read This Book
+--------------------
+-There is a muscle memory aspect to computer programming that can only be strengthen
+by actually doing the code
+
+-Do all the exercise in the book to practice that programming muscle memories
+
+
+01. Preparations
+================
+-User ruby 1.9.3 or higher
+
+Using a Code Editor
+-------------------
+-Use atom
+
+Stylish Ruby
+-------------
+-more info about Ruby style guide: https://github.com/bbatsov/ruby-style-guide
+
+Reading Documentation
+---------------------
+-API: application programming interface
+-API refer to how application talk to each other or documentation
+
+*Class name or Module name
+-In some documentation, class name is being referred to with a :: symbol
+like: Encoding::Converter
+-The :: symbol is used to define a namespace
+-namespace is a way to group classes in Ruby and differentiate from other classes
+with the same name
+-The :: at the method list means that :: is a class method
+
+*Methods
+-:: are considered class methods
+-# are considered instance methods
+-the ::,# are completely different in Ruby documentation and in the actual code
+-in the actual code # means comment and :: is used as a namespace
+
+*Example: Instance Methods vs Class Methods
+-public instance methods can be applied to any instance of the class
+
+*Parent
+-String class's parent is Object, and it inherit the methods of the Object
+
+*Class/Module Index
+-The menu is a list of all the other classes and modules that are part of the same
+namespace as the current class
+
+*Included Modules
+-Indicate additional modules whose functionality is available ot the String class
+
+*Summary
+-When in doubt, review the ruby docs at www.ruby-doc.org that match the version
+of ruby we're working with
+
+Using the Command Line and irb
+--------------------------
+
+*Command Line
+-simple terminal command
+
+*irb
+-irb is a Ruby built in interactive environment
+
+*Running Ruby Code
+-ruby example.rb
+-When we run a Ruby file from the command line, the code gets executed by what's
+called an interpreter
+
+What Are Ruby "Gems"?
+---------------------
+-Gems or RubyGems can mean two things
+1. a collection of ruby files or ruby library that performs a certain task
+2. publishing system that is behind organizing, listing, and publishing those libraries
+
+-The publishing system behind rubygems is powered by the website: rubygems.org

@@ -1,0 +1,29 @@
+================================================================================
+Introduction
+================================================================================
+
+-In any communication with humans, you can leave out all sorts of steps or concepts
+and let them fill in the gaps. Computer can't do this.
+
+--------------------------------------------------------------------------------
+What is Programming
+--------------------------------------------------------------------------------
+-Programming is telling your computer to do something.
+-In programming, large task must be broken up into smaller tasks down to the most
+basic task that you don't have to describe
+
+--------------------------------------------------------------------------------
+Programming Languages
+--------------------------------------------------------------------------------
+-Ruby is a relatively simple programming language than other languages such as Java
+
+--------------------------------------------------------------------------------
+The Art of Programming
+--------------------------------------------------------------------------------
+-A program is not built; it is grown
+-Because program is always growing and changing, it must be written with change in mind
+
+-Avoid duplication of code at all costs (DRY: Don't Repeat Yourself)
+
+-A good programmer cultivates the virtues of laziness. (But not just any laziness.
+You must be aggressively, proactively lazy!) save yourself work whenever possible.

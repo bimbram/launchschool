@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# attr_accessor
 #===============================================================================
 #
-# -You did it
+# -If we want to both read and write a particular variable, there's an even shorter
+# shortcut than using attr_reader and attr_writer. We can use attr_accessor to make
+# a variable readable and writable in one fell swoop
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Here we have an attr_reader and an attr_writer for :job. Go ahead and replace
+#    these with an attr_accessor!
 #
 #===============================================================================
 #
@@ -18,17 +20,14 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  attr_reader :name
+  attr_accessor :job
+
+  def initialize(name, job)
+    @name = name
+    @job = job
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

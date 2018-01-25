@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Module Magic
 #===============================================================================
 #
-# -You did it
+# -Let's move on to modules!
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create your own module called Languages in the editor to the right. Include
+#    a constant called FAVE and set it equal to a string naming your favorite programming
+#    language!
 #
 #===============================================================================
 #
@@ -18,17 +19,9 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+# Create your module below!
+module Languages
+  FAVE = "Ruby"
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

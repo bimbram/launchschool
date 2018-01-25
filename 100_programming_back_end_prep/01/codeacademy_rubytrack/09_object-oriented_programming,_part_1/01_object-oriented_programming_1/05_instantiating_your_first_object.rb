@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Instantiating Your First Object
 #===============================================================================
 #
-# -You did it
+# -We can create an instance of a class by calling .new
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a variable, matz, and set it equal to calling .new on your Person class.
+#    Pass .new the name "Yukihiro" as its only argument.
 #
 #===============================================================================
 #
@@ -18,17 +18,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  def initialize(name)
+    @name = name
   end
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+matz = Person.new("Yukihiro")
 
 #===============================================================================

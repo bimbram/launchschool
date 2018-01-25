@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Now You Try!
 #===============================================================================
 #
-# -You did it
+# -Now it's your turn!
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a variable, favorite_language, and conditionally set it to your favorite
+#    programming language.
 #
 #===============================================================================
 #
@@ -18,17 +18,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+# Write your code on line 2!
 
-numbers = [3, 5, 1, 6]
+favorite_language ||= "Ruby"
 
-puts alphabetize(numbers)
+puts favorite_language
 
 #===============================================================================

@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# Class Syntax
 #===============================================================================
 #
-# -You did it
+# -A basic class consists only of the class keyword and the name of the class
+# -By convention, class names start with a capital etter and use CamelCase instead
+# of relying_on_underscores
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a class called Person in the editor. Don't put anything between class
+#    Person and end just yet.
 #
 #===============================================================================
 #
@@ -18,17 +20,8 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+class Person
+
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# What's a Module?
 #===============================================================================
 #
-# -You did it
+# -A module is a toolbox that contains a set methods and constants
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Check out our example module in the editor. See how it has an approximation
+#    of pi stored in PI and a series of methods for calculating the circumference
+#    and area of a circle?
 #
 #===============================================================================
 #
@@ -18,17 +19,17 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+module Circle
+
+  PI = 3.141592653589793
+
+  def Circle.area(radius)
+    PI * radius**2
+  end
+
+  def Circle.circumference(radius)
+    2 * PI * radius
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Try It Yourself!
 #===============================================================================
 #
-# -You did it
+# -Let's define our method and pass it a block!
 #
 #===============================================================================
 #
@@ -9,8 +9,10 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Define your own method, double, that accepts a single parameter and yields
+#    to a block. Then call it with a block that multiplies the number parameter
+#    by 2. You can double any number you like! puts the result in order to see
+#    your yield in action!
 #
 #===============================================================================
 #
@@ -18,17 +20,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+def double num
+  yield(num)
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+double(3) {|n| puts n*2}
 
 #===============================================================================

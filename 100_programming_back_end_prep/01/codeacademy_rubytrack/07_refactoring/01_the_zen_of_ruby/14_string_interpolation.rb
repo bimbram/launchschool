@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# String Interpolation
 #===============================================================================
 #
-# -You did it
+# -You can use string interpolation to add variable value into a string
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Remove the concatenation operator and rewrite the code to use #{thing}. You
+#    will want to puts one complete string on line 6.
 #
 #===============================================================================
 #
@@ -18,17 +18,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+favorite_things = ["Ruby", "espresso", "candy"]
+
+puts "A few of my favorite things:"
+
+favorite_things.each do |thing|
+  puts "I love #{thing}!"
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

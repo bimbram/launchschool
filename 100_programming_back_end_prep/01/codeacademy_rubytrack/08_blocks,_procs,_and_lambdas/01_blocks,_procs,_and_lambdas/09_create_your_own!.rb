@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Create Your Own!
 #===============================================================================
 #
-# -You did it
+# -We're goint to create our own method that calls our own proc!
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a method, greeter, that takes no arguments and yields to a block. Create
+#    a Proc, phrase, that puts "Hello there!". Pass this to greeter instead of a
+#    block. (Don't forget to pass &phrase instead of
 #
 #===============================================================================
 #
@@ -18,17 +19,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+def greeter
+  yield
 end
 
-numbers = [3, 5, 1, 6]
+phrase = Proc.new {|x| puts 'Hello there!'}
 
-puts alphabetize(numbers)
+greeter &phrase
 
 #===============================================================================

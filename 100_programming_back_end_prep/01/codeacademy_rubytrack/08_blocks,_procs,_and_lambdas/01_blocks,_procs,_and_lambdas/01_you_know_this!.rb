@@ -1,7 +1,10 @@
-# You Did It! (For Real This Time)
+# You Know This!
 #===============================================================================
 #
-# -You did it
+# -A Ruby block is just a bit of code that can be executed. Block syntax uses either
+# do..end or curly braces ({})
+# -Blocks can be combined with methods like .each and .times to execute an instruction
+# for each element in a collection (like a hash or array).
 #
 #===============================================================================
 #
@@ -9,8 +12,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Let's do a little review! Use .times and a block to puts the string "I'm a block!"
+# five times.
+
 #
 #===============================================================================
 #
@@ -18,17 +22,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+# Write your code below!
+
+5.times do
+  puts "I'm a block!"
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

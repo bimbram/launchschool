@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# Classing It Up
 #===============================================================================
 #
-# -You did it
+# -We started our class definition off with a method called initialize.
+# -You can think of initialize as the function that 'boots up' each object the class
+# creates
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Go ahead and define an initialize method for your Person class. No need to
+#    put anything in the method body just yet.
 #
 #===============================================================================
 #
@@ -18,17 +20,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  def initialize
+
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

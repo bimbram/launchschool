@@ -1,7 +1,10 @@
-# You Did It! (For Real This Time)
+# Symbol Syntax
 #===============================================================================
 #
-# -You did it
+# -Symbols always start with a colon (:)
+# -Symbol must be valid Ruby variable names, so the first character after the colon
+# has to be a letter or underscore(_), after that, any combination of letters,
+# numbers, and underscores is allowed
 #
 #===============================================================================
 #
@@ -9,8 +12,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. All right! Time to create your first symbol. Create a regular old variable
+#    called my_first_symbol and set it equal to any valid symbol you like!
 #
 #===============================================================================
 #
@@ -18,17 +21,7 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+# Write your code below!
+my_first_symbol = :test
 
 #===============================================================================

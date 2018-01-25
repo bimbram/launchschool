@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Yielding With Parameters
 #===============================================================================
 #
-# -You did it
+# -You can also pass parameters to yield
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Call yield_name with your name as a parameter. Make sure to pass in a block
+#    that puts "My name is #{your name here}!"
 #
 #===============================================================================
 #
@@ -18,17 +18,18 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+def yield_name(name)
+  puts "In the method! Let's yield."
+  yield("Kim")
+  puts "In between the yields!"
+  yield(name)
+  puts "Block complete! Back in the method."
 end
 
-numbers = [3, 5, 1, 6]
+yield_name("Eric") { |n| puts "My name is #{n}." }
 
-puts alphabetize(numbers)
+# Now call the method with your name!
+yield_name("Bimo") { |n| puts "My name is #{n}." }
+
 
 #===============================================================================

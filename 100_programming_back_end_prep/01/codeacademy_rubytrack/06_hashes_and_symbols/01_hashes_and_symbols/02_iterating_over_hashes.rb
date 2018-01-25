@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Iterating Over Hashes
 #===============================================================================
 #
-# -You did it
+# -We can iterate over hashes using the .each method
 #
 #===============================================================================
 #
@@ -9,8 +9,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Iterate over the matz hash and print each value to the console using puts
 #
 #===============================================================================
 #
@@ -18,17 +17,15 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+matz = { "First name" => "Yukihiro",
+  "Last name" => "Matsumoto",
+  "Age" => 47,
+  "Nationality" => "Japanese",
+  "Nickname" => "Matz"
+}
+
+matz.each do |key, value|
+  puts value
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

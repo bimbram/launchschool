@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Quick Review: Building a Class
 #===============================================================================
 #
-# -You did it
+# -Let's build a class!
+#
 #
 #===============================================================================
 #
@@ -9,8 +10,10 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. First, create a class named Dog. Create a method initialize within your class
+#    Dog. Allow your initialize method to accept two parameters, name and breed.
+#    Inside your initialize method assign those two parameters to the variables
+#    @name and @breed respectively
 #
 #===============================================================================
 #
@@ -18,17 +21,11 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Dog
+  def initialize name, breed
+    @name = name
+    @breed = breed
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

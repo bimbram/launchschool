@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# There Can Be Only One!
 #===============================================================================
 #
-# -You did it
+# -All right! Let's do a little review
 #
 #===============================================================================
 #
@@ -9,8 +9,10 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a class called Message and give it an initialize method. The initialize
+#    method should take two parameters, from and to, and set them to the instance
+#    variables @from and @to (respectively). Don't worry about creating an instance
+#    of your class just yet.
 #
 #===============================================================================
 #
@@ -18,17 +20,11 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Message
+  def initialize(from, to)
+    @from = from
+    @to = to
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# Being Pushy
 #===============================================================================
 #
-# -You did it
+# -Instead of typnig out the ,push method name, you can simply use <<, the concatenation
+# operator (also known as "the shovel") to add an element to the end of an array
+# -the concatenation operator also works on strings!
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Update the code in the editor to use the concatenation operator instead of
+#    .push and +. puts the caption
 #
 #===============================================================================
 #
@@ -18,17 +20,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+alphabet = ["a", "b", "c"]
+alphabet << "d" # Update me!
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+caption = "A giraffe surrounded by "
+caption << "weezards!" # Me, too!
+puts alphabet
+puts caption
 
 #===============================================================================

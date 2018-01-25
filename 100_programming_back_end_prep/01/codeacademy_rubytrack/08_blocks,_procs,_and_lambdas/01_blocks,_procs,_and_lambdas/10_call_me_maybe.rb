@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Call Me Maybe
 #===============================================================================
 #
-# -You did it
+# -Unlike blocks, we can call procs directly by using Ruby's .call method
 #
 #===============================================================================
 #
@@ -9,8 +9,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Go ahead and create a proc called hi that puts "Hello!", then .call it!
 #
 #===============================================================================
 #
@@ -18,17 +17,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+hi = Proc.new do
+  puts "Hello!"
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+hi.call
 
 #===============================================================================

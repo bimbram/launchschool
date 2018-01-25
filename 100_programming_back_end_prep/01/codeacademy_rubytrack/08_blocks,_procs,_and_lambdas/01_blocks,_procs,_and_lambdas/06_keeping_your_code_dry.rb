@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# Keeping Your Code DRY
 #===============================================================================
 #
-# -You did it
+# -Blocks are not object, and this is one of the very few exception to the 'everyhing
+# is an object' rule in Ruby
+# -proc is a 'saved' block
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Check out the code in the editor. It's a proc! Can you guess what it does?
+#    Click Run when you think you know.
 #
 #===============================================================================
 #
@@ -18,17 +20,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+multiples_of_3 = Proc.new do |n|
+  n % 3 == 0
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+print (1..100).to_a.select(&multiples_of_3)
 
 #===============================================================================

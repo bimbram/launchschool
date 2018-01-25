@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# What's in a @name?
 #===============================================================================
 #
-# -You did it
+# -In Ruby we use @ before a variable to signify that it's an instance variable
+# -This means that the variable is attached to the instance of the class
 #
 #===============================================================================
 #
@@ -9,8 +10,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Give your initialize method a single parameter, name. In the body of your
+#    method, set @name = name. This tells Ruby that whenever it creates a Person,
+#    it has to have a name, and each instance of Person will have its own @name.
 #
 #===============================================================================
 #
@@ -18,17 +20,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  def initialize(name)
+    @name = name
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

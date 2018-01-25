@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Creating a Proc
 #===============================================================================
 #
-# -You did it
+# -Let's tackle procs. First step: create one!
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a proc called under_100 that checks if a number it's passed is less
+#    than 100. (We'll handle passing this proc the .select method in the next
+#    exercise—we won't need to do anything with the ages array just yet.)
 #
 #===============================================================================
 #
@@ -18,17 +19,11 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
 
-numbers = [3, 5, 1, 6]
+# Add your code below!
+under_100 = Proc.new {|age| age < 100}
 
-puts alphabetize(numbers)
+puts ages.select(&under_100)
 
 #===============================================================================

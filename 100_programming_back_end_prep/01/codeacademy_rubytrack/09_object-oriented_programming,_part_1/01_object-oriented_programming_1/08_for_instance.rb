@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# For Instance...
 #===============================================================================
 #
-# -You did it
+# -Global variables can be changed from anywhere in your program, and they are generally
+# not a very good idea. It's much better to create variables with limited scope that
+# can only be changed from a few places
 #
 #===============================================================================
 #
@@ -9,8 +11,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Add age and profession parameters to the initialize method, then set these
+#    equal to instance variables in the body of the method. Use the name/@name
+#    example as a guide.
 #
 #===============================================================================
 #
@@ -18,17 +21,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  def initialize(name, age, profession)
+    @name = name
+    @age = age
+    @profession = profession
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

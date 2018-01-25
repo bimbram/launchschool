@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# The Ternary Operator
 #===============================================================================
 #
-# -You did it
+# -Let's make our code even more streamlined using the ternary operator
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Refactor the if statement in the editor to use a ternary operator to puts the
+#    correct sentence.
 #
 #===============================================================================
 #
@@ -18,17 +18,6 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+puts 1 < 2 ? "One is less than two!" : "One is not less than two."
 
 #===============================================================================

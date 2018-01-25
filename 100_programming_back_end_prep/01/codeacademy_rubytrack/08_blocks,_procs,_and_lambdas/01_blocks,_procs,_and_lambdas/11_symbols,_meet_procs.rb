@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Symbols, Meet Procs
 #===============================================================================
 #
-# -You did it
+# -We can convert symbols to procs using '&'
 #
 #===============================================================================
 #
@@ -9,8 +9,10 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Using the example in the instructions as a guide, use collect or map to create
+#    the strings_array from the numbers_array. Each element of strings_array should
+#    be the string version of the corresponding element from the numbers_array
+#    (that is, it should go ["1", "2", "3"... "10"]).
 #
 #===============================================================================
 #
@@ -18,17 +20,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numbers = [3, 5, 1, 6]
+strings_array = numbers_array.map(&:to_s)
 
-puts alphabetize(numbers)
+puts strings_array
 
 #===============================================================================

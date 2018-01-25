@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Up the Down Staircase
 #===============================================================================
 #
-# -You did it
+# -If we know the range of numbers we'd like to include, we can use .upto and .downto
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Use .upto to puts the capital letters "L" through "P". (Make sure to use puts
+#    and not print, so each letter is on its own line!)
 #
 #===============================================================================
 #
@@ -18,17 +18,8 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+# Write your code below!
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+"L".upto("P") { |letter| puts letter}
 
 #===============================================================================

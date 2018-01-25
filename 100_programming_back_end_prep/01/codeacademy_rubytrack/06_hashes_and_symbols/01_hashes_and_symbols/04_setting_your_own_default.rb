@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Setting Your Own Default
 #===============================================================================
 #
-# -You did it
+# -You don't have to settle for nil as a default value, however if you create your
+# using Hash.new syntax, you can specify a default value
 #
 #===============================================================================
 #
@@ -9,8 +10,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. the meantime, create a hash called no_nil_hash and give it any default value
+#    other than nil.
 #
 #===============================================================================
 #
@@ -18,17 +19,6 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+no_nil_hash = Hash.new(0)
 
 #===============================================================================

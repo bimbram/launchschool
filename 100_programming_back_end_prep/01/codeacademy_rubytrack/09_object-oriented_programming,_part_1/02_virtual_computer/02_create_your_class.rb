@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Create Your Class
 #===============================================================================
 #
-# -You did it
+# -All right! Let's go ahead and set up our class.
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a class called Computer and give it an initialize method that takes
+#    no parameters. The body of initialize should be empty.
 #
 #===============================================================================
 #
@@ -18,17 +18,10 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Computer
+  def initialize
+
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

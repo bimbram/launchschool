@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Forge an Object in the Fires of Mount Ruby
 #===============================================================================
 #
-# -You did it
+# -Let's go ahead and create an instance of our Message class
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. After your class, create a variable called my_message. Create an instance of
+#    your Message class using Message.new with whatever from and to arguments you
+#    want! Store the result in my_message.
 #
 #===============================================================================
 #
@@ -18,17 +19,15 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Message
+  @@messages_sent = 0
+  def initialize(from, to)
+    @from = from
+    @to = to
+    @@messages_sent += 1
   end
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+my_message = Message.new("bimo", "bramantyo")
 
 #===============================================================================

@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Creating the Account Class
 #===============================================================================
 #
-# -You did it
+# -We'll start of by creating out Account class
 #
 #===============================================================================
 #
@@ -9,8 +9,11 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create an Account class in the editor. The :name and :balance attributes should
+#    be readable (but not writeable!). The class' initialize method should take
+#    two parameters, name and balance, and the balance parameter should default
+#    to 100. Finally, go ahead and store your parameters in instance variables
+#    @name and @balance, respectively.
 #
 #===============================================================================
 #
@@ -18,17 +21,11 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Account
+  def initialize name, balance=100
+    @name = name
+    @balance = balance
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

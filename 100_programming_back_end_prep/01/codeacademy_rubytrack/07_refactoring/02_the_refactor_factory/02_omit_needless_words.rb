@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Omist Needless Words
 #===============================================================================
 #
-# -You did it
+# -One of the most common suggestions when it comes to writing is to omit Needless
+# words
 #
 #===============================================================================
 #
@@ -9,8 +10,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Refactor the code in the editor to use single-line ifs and unlesss.
 #
 #===============================================================================
 #
@@ -18,17 +18,17 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+require 'prime'   # This is a module. We'll cover these soon!
+
+def first_n_primes(n)
+
+  return "n must be an integer." unless n.is_a? Integer
+
+  return "n must be greater than 0." if n <= 0
+
+  return Prime.first n
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+first_n_primes(10)
 
 #===============================================================================

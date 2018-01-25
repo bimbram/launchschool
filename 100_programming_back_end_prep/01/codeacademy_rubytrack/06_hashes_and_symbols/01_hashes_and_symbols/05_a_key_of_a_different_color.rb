@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# A Key of a Different Color
 #===============================================================================
 #
-# -You did it
+# -Another kind of hash is what we called symbols
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Check out the code in the editor. Those funny-looking variables that start
+#    with colons are symbols. Click Next to the next section for a symbol rundown
 #
 #===============================================================================
 #
@@ -18,17 +18,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+menagerie = { :foxes => 2,
+  :giraffe => 1,
+  :weezards => 17,
+  :elves => 1,
+  :canaries => 4,
+  :ham => 1
+}
 
 #===============================================================================

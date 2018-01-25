@@ -1,7 +1,11 @@
-# You Did It! (For Real This Time)
+# A Simpler 'If'
 #===============================================================================
 #
-# -You did it
+# -If the 'do something' is short simple expression, we can move it up into a single
+# line. The syntax looks like this: 'expression if boolean'
+# -The order is important. You can do this: puts "it's true!" if true. But not this
+# if true puts "it's true!"
+# -You don't need an end when you write your if statement all on one line
 #
 #===============================================================================
 #
@@ -9,8 +13,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Give it a go! Type a one-line if statement in the editor to the right. It can
+#    be whatever you like.
 #
 #===============================================================================
 #
@@ -18,17 +22,7 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+# Type your Ruby code below!
+puts "this is true" if true
 
 #===============================================================================

@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Nice work!
 #===============================================================================
 #
-# -You did it
+# -Fantastic! You really improved that code, and all it took was a little Ruby
+# know-how.
 #
 #===============================================================================
 #
@@ -9,8 +10,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Feel free to play around with the code for as long as you like, then click
+# Run to complete this project!
 #
 #===============================================================================
 #
@@ -18,17 +19,14 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+require 'prime'   # This is a module. We'll cover these soon!
+
+def first_n_primes(n)
+  return "n must be an integer." unless n.is_a? Integer
+  return "n must be greater than 0." if n <= 0
+  Prime.first n
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+first_n_primes(10)
 
 #===============================================================================

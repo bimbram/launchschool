@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# The Ruby Lambda
 #===============================================================================
 #
-# -You did it
+# -Like procs, lambdas are objects
+# -With the exception of a bit of syntax and a few behavioral quirks, lambdas are
+# identical to procs
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Now that you know how blocks and procs work, you should be able to guess what
+#    this lambda will puts to the console. Click Run to confirm your suspicions!
 #
 #===============================================================================
 #
@@ -18,17 +20,11 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+def lambda_demo(a_lambda)
+  puts "I'm the method!"
+  a_lambda.call
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+lambda_demo(lambda { puts "I'm the lambda!" })
 
 #===============================================================================

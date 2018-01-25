@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Mixin for the Win
 #===============================================================================
 #
-# -You did it
+# -Our review wouldn't be complete without a little mixin magic
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Finally, let's include our Languages module in the Master class (on line 6)
+#    so that our favorite language gets printed to the console.
 #
 #===============================================================================
 #
@@ -18,17 +18,19 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+module Languages
+  FAVE = "Ruby"  # This is what you typed before, right? :D
+end
+
+class Master
+	include Languages
+  def initialize; end
+  def victory
+    puts FAVE
   end
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+total = Master.new
+total.victory
 
 #===============================================================================

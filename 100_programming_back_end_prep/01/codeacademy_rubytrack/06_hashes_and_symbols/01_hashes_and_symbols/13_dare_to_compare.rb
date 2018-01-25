@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Dare to Compare
 #===============================================================================
 #
-# -You did it
+# -
 #
 #===============================================================================
 #
@@ -9,8 +9,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. The numbers don't lie. Click Run to see for yourself!
 #
 #===============================================================================
 #
@@ -18,17 +17,20 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+require 'benchmark'
+
+string_AZ = Hash[("a".."z").to_a.zip((1..26).to_a)]
+symbol_AZ = Hash[(:a..:z).to_a.zip((1..26).to_a)]
+
+string_time = Benchmark.realtime do
+  100_000.times { string_AZ["r"] }
 end
 
-numbers = [3, 5, 1, 6]
+symbol_time = Benchmark.realtime do
+  100_000.times { symbol_AZ[:r] }
+end
 
-puts alphabetize(numbers)
+puts "String time: #{string_time} seconds."
+puts "Symbol time: #{symbol_time} seconds."
 
 #===============================================================================

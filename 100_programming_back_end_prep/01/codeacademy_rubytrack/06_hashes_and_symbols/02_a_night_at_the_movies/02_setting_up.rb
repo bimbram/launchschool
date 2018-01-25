@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Setting Up
 #===============================================================================
 #
-# -You did it
+# -Create a hash to hold our movies and their rating
+# -Prompt the user for input so we can store movie/ratings pair in our hash
 #
 #===============================================================================
 #
@@ -9,8 +10,11 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Let's get started.
+#    1. Create a hash and assign it to the variable movies. Put in your favorite
+#       movie as the key, with a number rating for the value.
+#    2. Prompt the user for input with puts and save that input in a variable called
+#       choice.
 #
 #===============================================================================
 #
@@ -18,17 +22,13 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+movies = {
+	"Children of Menp" => 4.2
+}
 
-numbers = [3, 5, 1, 6]
+puts "input something here"
 
-puts alphabetize(numbers)
+choice = gets.chomp
+
 
 #===============================================================================

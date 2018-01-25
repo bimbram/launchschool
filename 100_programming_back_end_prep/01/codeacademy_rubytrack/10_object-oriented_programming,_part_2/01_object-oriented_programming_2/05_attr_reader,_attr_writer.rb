@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# attr_reader, attr_writer
 #===============================================================================
 #
-# -You did it
+# -Ruby needs methods in order to access attributes.
+# -However, we can also use attr_reader to access a variable and attr_write to change
+# it
 #
 #===============================================================================
 #
@@ -9,8 +11,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. We've brought back our Person class with a method for getting @name and a
+#    method for changing his or her @job. Go ahead and remove the name and job=
+#    methods and add an attr_reader for :name and an attr_writer for :job.
 #
 #===============================================================================
 #
@@ -18,17 +21,13 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Person
+  attr_reader :name
+  attr_writer :job
+  def initialize(name, job)
+    @name = name
+    @job = job
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

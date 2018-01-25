@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Inheriting a Fortune
 #===============================================================================
 #
-# -You did it
+# -Let's get in a little practice with inheritance.
 #
 #===============================================================================
 #
@@ -9,8 +9,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a second class, Email, that inherits from Message. Give it its own
+#    initialize method that takes just one parameter, subject, and has one instance
+#    variable, @subject, set equal to subject.
 #
 #===============================================================================
 #
@@ -18,17 +19,21 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Message
+  @@messages_sent = 0
+  def initialize(from, to)
+    @from = from
+    @to = to
+    @@messages_sent += 1
   end
 end
 
-numbers = [3, 5, 1, 6]
+my_message = Message.new("bimo", "bramantyo")
 
-puts alphabetize(numbers)
+class Email < Message
+  def initialize subject
+    @subject = subject
+  end
+end
 
 #===============================================================================

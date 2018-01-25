@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# One-Liners
 #===============================================================================
 #
-# -You did it
+# -Refactoring is just a fancy way of saying we're improving the structure or appearance
+# of our code without changing what it actually does
 #
 #===============================================================================
 #
@@ -9,8 +10,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Refactor the contents of the editor to just one line of code.
 #
 #===============================================================================
 #
@@ -18,17 +18,6 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+puts "One is less than two!" if 1 < 2
 
 #===============================================================================

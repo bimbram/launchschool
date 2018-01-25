@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# 'For' Shame
 #===============================================================================
 #
-# -You did it
+# -Let's do something about the decidedly un-Ruby for loop in the editor
 #
 #===============================================================================
 #
@@ -9,8 +9,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Let's finish up by refactoring the for loop on the right to use .times instead.
 #
 #===============================================================================
 #
@@ -18,17 +17,6 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+3.times {puts "I'm a refactoring master!"}
 
 #===============================================================================

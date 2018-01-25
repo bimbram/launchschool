@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Conditional Assignment
 #===============================================================================
 #
-# -You did it
+# -Review conditional assignment!
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a variable called favorite_animal and conditionally assign it to a
+#    string containing the name of your favorite animal.
 #
 #===============================================================================
 #
@@ -18,17 +18,6 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+favorite_animal ||= "cat"
 
 #===============================================================================

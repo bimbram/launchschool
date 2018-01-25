@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Implicit Return
 #===============================================================================
 #
-# -You did it
+# -let's simplify our method madness by removing unnecessary returns from our code.
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Write a method, square, that takes a number as an argument and implicitly
+#    returns the square of that number.
 #
 #===============================================================================
 #
@@ -18,17 +18,8 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+def square a
+  a * a
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

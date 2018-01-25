@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# Many Paths to the Same Summit
 #===============================================================================
 #
-# -You did it
+# -Besides using .to_sym, you can also use '.intern'. This will internalize the
+# strings into a symbol and works just like '.to_sym'
 #
 #===============================================================================
 #
@@ -9,8 +10,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Update your code from the last exercise to use .intern instead of .to_sym.
 #
 #===============================================================================
 #
@@ -18,17 +18,16 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+# Add your code below!
+
+symbols = []
+
+strings.each do |s|
+  symbols.push(s.intern)
 end
 
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+print symbols
 
 #===============================================================================

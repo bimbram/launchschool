@@ -1,7 +1,10 @@
-# You Did It! (For Real This Time)
+# Going Public
 #===============================================================================
 #
-# -You did it
+# -Great work! Now we'll get into the details of public and private methods.
+# -Methods are public by default in Ruby, so if you don't specify public or private,
+# your methods will be public
+#
 #
 #===============================================================================
 #
@@ -9,8 +12,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. For now, let's add a public method called bark to Dog. The bark method should
+#    puts "Woof!".
 #
 #===============================================================================
 #
@@ -18,17 +21,18 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Dog
+  def initialize name, breed
+    @name = name
+    @breed = breed
   end
+
+  public
+
+  def bark
+    puts "Woof!"
+  end
+
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

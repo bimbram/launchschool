@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# Private Affairs
 #===============================================================================
 #
-# -You did it
+# -Good! Now let's try a private method
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Below your public method, add a private method called password that returns
+#    the super secret password 12345
 #
 #===============================================================================
 #
@@ -18,17 +18,21 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Application
+  attr_accessor :status
+  def initialize; end
+  # Add your method here!
+  public
+
+  def print_status
+    puts "All systems go!"
+  end
+
+  private
+
+  def password
+    12345
   end
 end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
 
 #===============================================================================

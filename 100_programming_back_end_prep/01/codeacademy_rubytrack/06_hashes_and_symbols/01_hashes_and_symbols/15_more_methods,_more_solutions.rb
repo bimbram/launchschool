@@ -1,7 +1,8 @@
-# You Did It! (For Real This Time)
+# More Methods, More Solutions
 #===============================================================================
 #
-# -You did it
+# -can we iterate over just keys or just values?
+# -we can! using '.each_key' and '._each_value'
 #
 #===============================================================================
 #
@@ -9,8 +10,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Go ahead and print out just the titles of our movies using puts.
 #
 #===============================================================================
 #
@@ -18,17 +18,21 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+movie_ratings = {
+  memento: 3,
+  primer: 3.5,
+  the_matrix: 3,
+  truman_show: 4,
+  red_dawn: 1.5,
+  skyfall: 4,
+  alex_cross: 2,
+  uhf: 1,
+  lion_king: 3.5
+}
+# Add your code below!
 
-numbers = [3, 5, 1, 6]
 
-puts alphabetize(numbers)
+movie_ratings.each_key { |title|
+  puts title}
 
 #===============================================================================

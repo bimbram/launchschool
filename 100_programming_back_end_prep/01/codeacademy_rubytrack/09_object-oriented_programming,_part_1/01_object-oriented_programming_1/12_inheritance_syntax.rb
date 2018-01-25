@@ -1,7 +1,12 @@
-# You Did It! (For Real This Time)
+# Inheritance Syntax
 #===============================================================================
 #
-# -You did it
+# -In Ruby, inheritance works like this:
+# class DerivedClass < BaseClass
+# some stuff
+# end
+#
+# -We can read "<" as "inherits from"
 #
 #===============================================================================
 #
@@ -9,8 +14,9 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. We've created an Application class in the editor to the right. Create your
+#    own class, MyApp, that inherits from Application. No need to put anything
+#    inside your class definition just yet!
 #
 #===============================================================================
 #
@@ -18,17 +24,19 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
+class Application
+  def initialize(name)
+    @name = name
   end
 end
 
-numbers = [3, 5, 1, 6]
+# Add your code below!
 
-puts alphabetize(numbers)
+class MyApp < Application
+
+end
+
+
+
 
 #===============================================================================

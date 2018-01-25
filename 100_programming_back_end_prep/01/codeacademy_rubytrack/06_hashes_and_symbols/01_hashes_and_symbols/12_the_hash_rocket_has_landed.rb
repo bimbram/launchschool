@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# The Hash Rocket Has Landed
 #===============================================================================
 #
-# -You did it
+# -New syntax in Ruby for hashes
 #
 #===============================================================================
 #
@@ -9,8 +9,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Update your hash from the previous exercise to use the new 1.9 hash syntax
+#    instead of the older hash rocket syntax.
 #
 #===============================================================================
 #
@@ -18,17 +18,8 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+movies = {
+  	gladiator: "1"
+}
 
 #===============================================================================

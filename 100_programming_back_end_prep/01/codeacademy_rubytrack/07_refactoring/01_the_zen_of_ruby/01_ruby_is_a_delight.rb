@@ -1,7 +1,9 @@
-# You Did It! (For Real This Time)
+# Ruby is a Delight
 #===============================================================================
 #
-# -You did it
+# -As a language, Ruby prioritizes programmer productivity over program optimization
+# -Ruby may not always run a program in the fastest way possible, but it strives
+# to be a language that programmers find easy and fun to use.
 #
 #===============================================================================
 #
@@ -9,8 +11,8 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Click Run when you think you know what the output will be.
+#
 #
 #===============================================================================
 #
@@ -18,17 +20,12 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
+ruby_is_eloquent = true
+ruby_is_ugly = false
 
-numbers = [3, 5, 1, 6]
+puts "Ruby is eloquent!" if ruby_is_eloquent
+puts "Ruby's not ugly!" unless ruby_is_ugly
 
-puts alphabetize(numbers)
+
 
 #===============================================================================

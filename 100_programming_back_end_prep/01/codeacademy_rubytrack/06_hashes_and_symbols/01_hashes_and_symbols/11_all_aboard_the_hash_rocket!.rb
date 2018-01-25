@@ -1,7 +1,7 @@
-# You Did It! (For Real This Time)
+# All Aboard the Hash Rocket!
 #===============================================================================
 #
-# -You did it
+# -The hash syntax '->' is sometimes nicknamed the hash rocket
 #
 #===============================================================================
 #
@@ -9,8 +9,7 @@
 #
 #===============================================================================
 #
-# 1. Click Run to finish this project and continue your journey toward Ruby
-#    Method Mastery
+# 1. Create a hash called movies with symbols as keys and strings as values.
 #
 #===============================================================================
 #
@@ -18,17 +17,8 @@
 #
 #===============================================================================
 
-def alphabetize(arr, rev = false)
-  arr.sort!
-  if rev == true
-    arr.reverse!
-  else
-  	arr
-  end
-end
-
-numbers = [3, 5, 1, 6]
-
-puts alphabetize(numbers)
+movies = {
+  	:gladiator => "1"
+}
 
 #===============================================================================

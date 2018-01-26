@@ -1,0 +1,22 @@
+-arithmetic operator are methods
+
+-in Ruby we've always been inside a special object Ruby has created for us that
+represents the whole program called self
+
+-Every method is being done by some object even if it doesn't have a dot in front
+of it
+
+-some string method: .reverse .length .upcase .downcase .swapcase .capitalize
+.center .ljust (left justify) .rjust (right justify)
+
+-other arithmetic operator: exponentiation (**), modulus (%)
+
+-absolute value method: .abs
+
+-random value method: .rand
+
+-returning the same random value: .srand
+
+-the Math object method: Math::PI, Math::E, Math.cos, Math.tan, Math.log
+
+-:: is the scope operator

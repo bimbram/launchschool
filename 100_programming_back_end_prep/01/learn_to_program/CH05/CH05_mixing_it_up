@@ -1,0 +1,18 @@
+-how to convert into string: using '.to_s' method
+
+-how to convert into integer: using '.to_i' method
+
+-how to convert into float: using 'to_f' method
+
+-'gets' is the syntax to get input from user
+
+-'.chomp' method takes of any Enter characters hanging out at the end of our string
+
+-see page: 27
+
+-there are two classes of integers in Ruby: Fixnums and Bignums. Basically, really
+big number are Bignums, and smaller ones are Fixnum
+
+-Most programming languages don't have anything like Bignum (at least not built in)
+so all of your integers have to be relatively small, and if you add two largish
+integers you might end up with a very small one or even a negative one.

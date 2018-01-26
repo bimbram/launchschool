@@ -1,0 +1,7 @@
+-integer: number without decimal points
+-float: number with decimal points
+
+
+integer division '/' => 9/2 = 4
+
+if you want to use float division '/' => 9.0 / 2
